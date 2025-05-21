@@ -18,7 +18,10 @@ public class QuestionService {
     QuestionDao questionDao;
 
     public List<Question> getAllQuestions(){
-         return questionDao.findAll();
+//         return questionDao.findAll();
+        List<Question> questions = questionDao.findAll();
+        System.out.println("Fetched questions: " + questions);  //
+        return questions;
     }
 
 
