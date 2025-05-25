@@ -1,13 +1,10 @@
 package com.example.QuizApp.service;
 
 
-import com.example.QuizApp.Question;
+import com.example.QuizApp.model.Question;
 import com.example.QuizApp.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 

@@ -1,13 +1,13 @@
 package com.example.QuizApp.controller;
 
-import com.example.QuizApp.Question;
+import com.example.QuizApp.model.Question;
 import com.example.QuizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
+import org.springframework.http.ResponseEntity;
 import java.util.List;
-
 
 
 @RestController
