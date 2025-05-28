@@ -10,7 +10,7 @@ import java.util.List;
 public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer id=1001;
     private String title;
     @ManyToMany
     private List<Question> questions;
