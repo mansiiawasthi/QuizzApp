@@ -35,6 +35,7 @@ package com.example.QuizApp.controller;
 import com.example.QuizApp.model.QuestionWrapper;
 import com.example.QuizApp.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.http.ResponseEntity;
@@ -48,8 +49,9 @@ public class QuizController {
     QuizService quizService;
 
     @PostMapping("create")
-    public ResponseEntity<String> createQuiz (@RequestParam int numQ, @RequestParam String category, @RequestParam String title) {
+    public ResponseEntity<String> createQuiz ( @RequestParam String category,@RequestParam int numQ, @RequestParam String title) {
         return quizService.createQuiz(category, numQ, title);
+//        return new ResponseEntity<>("I am here", HttpStatus.OK);
     }
 
     @GetMapping("get/{id}")
